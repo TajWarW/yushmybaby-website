@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Website</title>
+ <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="container" id="initialQuestionSection">
+    <h1 style="font-family: 'Love Ya Like A Sister', cursive;">Hey my precious Yusra, how was your day?</h1>
+    <button onclick="greatDay()">It was great</button>
+    <button onclick="notGreatDay()">Not that great</button>
+ <!-- Additional gif -->
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDhmNHQwNjlydHFpMnN3MDU2MTBjbWVwYnZmZmVobGg5bGl0M3JoNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/L9EUxgj4PCwU6pZXsS/giphy.gif" alt="Description of the gif" class="gif">
+</div>
+
+<div class="hidden" id="greatSection">
+    <h1 style="font-family: 'Love Ya Like A Sister', cursive;">Hey Love, mind if I ask you a question?</h1>
+    <button id="yesButton" onclick="askQuestion()">Sure</button>
+</div>
+
+<div class="hidden" id="notGreatSection">
+    <p style="font-family: 'Love Ya Like A Sister', cursive;">Oh no! It's okay my Babyy, I am here to cheer you up.</p>
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMm9kMXdjenZkZTAyOHMxYnZhMDV0d2NtYjA0MXRveXF3aGNja25vbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/92YG8KKSjYhMc/giphy.gif" alt="Hugging Hello Kitty" class="gif">
+    <button id="noButton" onclick="backToStart()">Yay</button>
+</div>
+
+<div class="hidden" id="questionSection">
+    <h2 style="font-family: 'Love Ya Like A Sister', cursive;">Roses are red,</h2>
+    <p style="font-family: 'Love Ya Like A Sister', cursive;">Violets are blue,</p>
+    <p style="font-family: 'Love Ya Like A Sister', cursive;">Sugar is sweet,</p>
+    <p style="font-family: 'Love Ya Like A Sister', cursive;">And so are you.</p>
+    <h2 style="font-family: 'Love Light', cursive;">Will you be my valentine?</h2>
+    <button id="yesButton" onclick="yesClicked()">Yes</button>
+    <button id="noButton" onclick="noClicked()">No</button>
+ <!-- Additional gif -->
+    <img src="https://media.giphy.com/media/IXKpCSR4CY1rO/giphy.gif" alt="Description of the gif">
+</div>
+</body>
+</html>

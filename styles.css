@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffd1dc; /* Light pink background color */
+    background-image: url('https://i.postimg.cc/sXQWw6yg/yayyy.jpg'); 
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: cover; /* Cover the entire background */
+}
+
+.container {
+    text-align: center;
+    margin-top: 20%;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #ff1493; /* Pink button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Add animation for fading in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply fade-in animation to sections */
+.container,
+#notGreatSection,
+#greatSection,
+#questionSection {
+  animation: fadeIn 1s ease-in-out;
+}
+/* Style for the buttons */
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #ff1493;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for the "No" button */
+button#noButton {
+    padding: 5px 10px; /* Adjust the padding to make the button smaller */
+}
+
+/* Style for the "Yes" button */
+button#yesButton {
+    padding: 20px 40px; /* Adjust the padding to make the button bigger */
+}
+
+
+.container {
+    text-align: center; /* Center align text in the container */
+}
+
+/* Center align text in each section */
+.container h1,
+.container p,
+.container h2,
+.container button {
+    margin: 0 auto; /* Center align text */
+    text-align: center; /* Center align text */
+}
+/* Style for the gif */
+img.gif {
+    max-width: 100%; /* Limit the maximum width of the gif */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Set maximum height for the gif */
+}
